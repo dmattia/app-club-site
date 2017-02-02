@@ -1,0 +1,22 @@
+# virtualenv
+bin/
+include/
+lib/
+.Python
+
+# Python compiled files
+*.pyc
+
+# Vim files
+*.sw[op]
+
+# Mac icon files
+.DS_Store
+
+# Databases
+*.sqlite3
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

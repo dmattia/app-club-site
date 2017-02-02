@@ -1,0 +1,15 @@
+.add-row {
+  display:block;
+  margin-top:15px;
+  font-size: 30px;
+  height: 50px;
+  border-style: dashed;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.delete-row:before {
+  font-family: FontAwesome;
+  content: "\f056";
+  margin-right: 0.3em;
+}

@@ -1,0 +1,60 @@
+.main-link-heading {
+  text-decoration: underline;
+  color: #202020;
+}
+
+.main-link-description {
+  color: #202020;
+}
+
+.eqHeights {
+  display: flex;
+}
+
+.cover {
+  background-size: cover;
+}
+
+.contain {
+  background-size: contain;
+}
+
+.background-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
+.spaced-out {
+  margin-top: 20px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.button-link {
+  background-color: transparent;
+  border: none;
+}
+
+/* autocomplete input */
+input#autocomplete {
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+input#autocomplete:focus {
+  background-color: #fcfcfc;
+}
+
+.float-down {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

@@ -1,0 +1,28 @@
+version: 0.1
+
+environment_variables:
+  plaintext:
+    CodeBuild: "true"
+            
+phases:
+  install:
+    commands:
+      - pip install -r requirements.txt
+      - cd app_club && python manage.py collectstatic --noinput
+  pre_build:
+    commands:
+      - cd app_club && python manage.py migrate
+  build:
+    commands:
+      # As of 12/30/2016, AWS CodeBuild starts each
+      # line from the root directory (in a separate shell)
+      #, meaning that changing directories must be
+      # done on a single line, as below.
+      - cd app_club && python manage.py test
+artifacts:
+  files:
+    # AWS CodeBuild requires an output artifact to be named,
+    # even though CodePipeline ignores this artifact and uses
+    # the entire project directory no matter what you put here.
+    - README.md
+  discard-paths: yes
