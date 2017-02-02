@@ -9,7 +9,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 ADMIN_URL = "admin-page"
 
-SECRET_KEY = "NOT_SO_SECRET____FOR_NOW!"
+SECRET_KEY = "NOT_SO_SECRET___FOR_NOW!"
 
 # Put our domain here.
 ALLOWED_HOSTS = [
